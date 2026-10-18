@@ -362,6 +362,25 @@ footer a:hover { color: var(--accent); }
   max-width: 34rem;
 }
 
+.log-media {
+  margin-top: 0.875rem;
+}
+
+.log-media img,
+.log-media video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.log-media figcaption {
+  font-size: 0.75rem;
+  color: var(--faint);
+  margin-top: 0.5rem;
+}
+
 @media (max-width: 34rem) {
   .log-entry { grid-template-columns: 1fr; }
   .log-entry time { padding-top: 0; }
