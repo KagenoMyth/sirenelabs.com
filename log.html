@@ -29,6 +29,34 @@
   </svg>
   <p class="lede">Short, frequent notes on what we're building — the in-progress version. Longer writeups live on the <a href="blog.html">blog</a>.</p>
   <div class="log-list">
+    <article class="log-entry" id="log-2026-10-22-sirene-finance">
+      <time class="mono" datetime="2026-10-22">2026-10-22</time>
+      <div>
+        <span class="tag mono">sirene-finance</span>
+        <p>Rebuilt the face of Sirene Finance, the desktop ledger. The layout is now relative to the screen instead of capped at a fixed width: the columns are proportions of the viewport, the type scales with it, and the window fills whatever it is given. On top of that, ember glass — translucent panels over a slow drift of light, and an orange glow that follows the pointer across each card, with a field of particles that leans toward it.</p>
+        <figure class="log-media">
+          <img src="media/finance-profile.png" alt="Sirene Finance profile view: accounts, conversation, and the summary rail" loading="lazy">
+          <figcaption>The profile view. Sample figures — no real accounts appear in this image.</figcaption>
+        </figure>
+        <figure class="log-media">
+          <video src="media/finance-ember.mp4" autoplay muted loop playsinline controls aria-label="The ember glow following a pointer across the window"></video>
+          <figcaption>The ember following the pointer: the glass lights where it is touched, and the particles lean after it. Ten seconds, looped.</figcaption>
+        </figure>
+        <figure class="log-media">
+          <img src="media/finance-ledger.png" alt="Sirene Finance ledger view: a table of transactions and a panel naming repeated merchants" loading="lazy">
+          <figcaption>The ledger view: thirteen months of rows, filters, and a panel that names the merchants taking the money. Sample figures.</figcaption>
+        </figure>
+        <figure class="log-media">
+          <img src="media/finance-holdings.png" alt="Close crop of the summary rail: the goal bar, and crypto, silver and gold panels" loading="lazy">
+          <figcaption>Detail, at native size: the goal bar and the three holdings panels. Crypto is priced from a local spot file; the silver figure is the carried account, cross-checked against spot.</figcaption>
+        </figure>
+        <figure class="log-media">
+          <img src="media/finance-leaks.png" alt="Close crop of the leak panel: merchants with hit counts, averages, totals and DRIP flags" loading="lazy">
+          <figcaption>Detail, at native size: where the money leaks. Bills and income are excluded; what remains is the discretionary repeat. Cheap ones are marked DRIP.</figcaption>
+        </figure>
+        <p>The Guild Master can also be told to change things now. Ask him to set a savings goal and the goal changes in the application, not just in the answer.</p>
+      </div>
+    </article>
     <article class="log-entry" id="log-2026-10-17-cardinal">
       <time class="mono" datetime="2026-10-17">2026-10-17</time>
       <div>
