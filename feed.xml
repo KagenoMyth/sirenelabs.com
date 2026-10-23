@@ -5,7 +5,14 @@
     <link>https://sirenelabs.com/</link>
     <description>Notes from the lab — build logs, experiments, and lessons learned.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 12:20:19 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 00:00:00 -0700</lastBuildDate>
+    <item>
+      <title>cardinal — 2026-10-23</title>
+      <link>https://sirenelabs.com/log.html#log-2026-10-23-cardinal</link>
+      <guid isPermaLink="true">https://sirenelabs.com/log.html#log-2026-10-23-cardinal</guid>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 -0700</pubDate>
+      <description>Shipped v0.7.0 of cardinal, the desktop overlay: true multimonitor. The world is one continuous panorama across the monitor union — not mirrored, not split at the seam — each panel at its native resolution, the HUD anchored to a selectable primary monitor with per-DPI scaling, the menu opening on whichever monitor the pointer is on, screenshots scoped to the monitor under the mouse, a fullscreen app blanking the whole desk to black, and the screensaver spanning both panels after a hotplug.</description>
+    </item>
     <item>
       <title>infrastructure — 2026-10-23</title>
       <link>https://sirenelabs.com/log.html#log-2026-10-23-autoresearch</link>
