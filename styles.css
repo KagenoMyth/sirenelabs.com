@@ -368,19 +368,6 @@ footer a:hover { color: var(--accent); }
 
 /* A motion clip has to be seen to earn its place: break it out of the 34rem
    reading column to at most 76rem, centred on its own cell. */
-.log-media.wide {
-  /* Anchored to the viewport, not to the cell: the media cell sits 8.5 rem right of
-     the page's centre, so centring on the cell walks the figure off the screen. */
-  width: min(72rem, calc(100vw - 3rem));
-  max-width: none;
-  margin-left: calc(50% - 50vw + 1.5rem);
-}
-
-.log-media.wide video {
-  width: 100%;
-  height: auto;
-}
-
 .log-media img,
 .log-media video {
   display: block;
@@ -388,6 +375,13 @@ footer a:hover { color: var(--accent); }
   height: auto;
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+/* The log carries pictures, so it reads wider than a text page: 56 rem of column
+   gives a 1600 px capture room to be read instead of squinted at. Text keeps its
+   34 rem measure. */
+main.page.log {
+  max-width: 56rem;
 }
 
 .log-media figcaption {
