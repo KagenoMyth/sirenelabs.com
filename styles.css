@@ -366,6 +366,14 @@ footer a:hover { color: var(--accent); }
   margin-top: 0.875rem;
 }
 
+/* A motion clip has to be seen to earn its place: break it out of the 34rem
+   reading column to at most 76rem, centred on its own cell. */
+.log-media.wide {
+  width: min(76rem, calc(100vw - 3rem));
+  position: relative;
+  left: calc((min(76rem, calc(100vw - 3rem)) - 100%) / -2);
+}
+
 .log-media img,
 .log-media video {
   display: block;
