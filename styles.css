@@ -369,9 +369,16 @@ footer a:hover { color: var(--accent); }
 /* A motion clip has to be seen to earn its place: break it out of the 34rem
    reading column to at most 76rem, centred on its own cell. */
 .log-media.wide {
-  width: min(76rem, calc(100vw - 3rem));
-  position: relative;
-  left: calc((min(76rem, calc(100vw - 3rem)) - 100%) / -2);
+  /* Anchored to the viewport, not to the cell: the media cell sits 8.5 rem right of
+     the page's centre, so centring on the cell walks the figure off the screen. */
+  width: min(72rem, calc(100vw - 3rem));
+  max-width: none;
+  margin-left: calc(50% - 50vw + 1.5rem);
+}
+
+.log-media.wide video {
+  width: 100%;
+  height: auto;
 }
 
 .log-media img,
