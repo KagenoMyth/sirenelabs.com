@@ -29,29 +29,57 @@
   </svg>
   <p class="lede">Short, frequent notes on what we're building — the in-progress version. Longer writeups live on the <a href="blog.html">blog</a>.</p>
   <div class="log-list">
+    <article class="log-entry" id="log-2026-10-23-sirene-finance-hands">
+      <time class="mono" datetime="2026-10-23">2026-10-23</time>
+      <div>
+        <span class="tag mono">sirene-finance</span>
+        <p>The advisor got hands. Sirene Finance can now write to the ledger it reads — a balance, a rate, a savings goal — and every write leaves a receipt: the last three changes sit pinned under the account list, each naming what moved and what it was before. A debt carries its own arithmetic now, too: the rate, the month it is paid off and the day it falls due live inside the row, and pressing one opens the sheet where the numbers recalculate as you type.</p>
+        <p>Two things the coins taught us. A wallet is not a bank account: a weekly purchase is invisible to any feed, so a balance gets projected from the last confirmed figure and the day it is bought, marked with a tilde until somebody confirms it. And one quantity must have one price — the row, the net worth and the panel now read the same daily close kept on this machine, because a coin worth two different amounts on one screen is not a display bug, it is a broken instrument.</p>
+        <figure class="log-media">
+          <img src="media/2026-10-23/finance-profile.png" alt="Sirene Finance profile view: accounts with rate, payoff and due chips, an advisor receipt, and the pinned change log" loading="lazy">
+          <figcaption>The whole window. Assets and debts on the left with their chips, the advisor's applied change in the middle, the rail on the right, and the receipt log pinned beneath the accounts so a long list cannot push it away. Sample figures — no real accounts appear in this image.</figcaption>
+        </figure>
+        <figure class="log-media">
+          <img src="media/2026-10-23/finance-debt-chips.png" alt="Close crop of two debt rows showing rate, payoff month and due day chips" loading="lazy">
+          <figcaption>Detail, at native size: the rate, the month the debt clears and the day the payment falls due, inside each row. Sample figures.</figcaption>
+        </figure>
+        <figure class="log-media">
+          <img src="media/2026-10-23/finance-coin.png" alt="The coin sheet open over the dashboard: balance, weekly purchase, weekday, next purchase date and projection" loading="lazy">
+          <figcaption>The sheet behind a coin row: what it holds, how much is bought each week and on which day, when the next purchase lands, and what one purchase is worth at today's close. Confirming restarts the projection from today. Sample figures.</figcaption>
+        </figure>
+        <figure class="log-media">
+          <img src="media/2026-10-23/finance-coin-detail.png" alt="The coin sheet at native size: quantity field, weekly amount, weekday selector, next purchase and projected balance" loading="lazy">
+          <figcaption>The same sheet at 1:1. The dollar value of the typed quantity is shown before anything is written, which is how a missing digit becomes a number on screen instead of a wrong balance.</figcaption>
+        </figure>
+        <figure class="log-media">
+          <img src="media/2026-10-23/finance-ledger.png" alt="Sirene Finance ledger view: a table of transactions, a panel naming repeated merchants, and the account column with its chips" loading="lazy">
+          <figcaption>The ledger view on the same layout: thirteen months of rows, filters, and the panel that names the merchants taking the money. The receipt log and the chips follow the column into this view too. Sample figures.</figcaption>
+        </figure>
+      </div>
+    </article>
     <article class="log-entry" id="log-2026-10-22-sirene-finance">
       <time class="mono" datetime="2026-10-22">2026-10-22</time>
       <div>
         <span class="tag mono">sirene-finance</span>
         <p>Rebuilt the face of Sirene Finance, the desktop ledger. The layout is now relative to the screen instead of capped at a fixed width: the columns are proportions of the viewport, the type scales with it, and the window fills whatever it is given. On top of that, ember glass — translucent panels over a slow drift of light, and an orange glow that follows the pointer across each card, with a field of particles that leans toward it.</p>
         <figure class="log-media">
-          <img src="media/finance-profile.png" alt="Sirene Finance profile view: accounts, conversation, and the summary rail" loading="lazy">
+          <img src="media/2026-10-22/finance-profile.png" alt="Sirene Finance profile view: accounts, conversation, and the summary rail" loading="lazy">
           <figcaption>The profile view. Sample figures — no real accounts appear in this image.</figcaption>
         </figure>
         <figure class="log-media">
-          <video src="media/finance-ember.mp4" autoplay muted loop playsinline controls aria-label="The ember glow following a pointer across the window"></video>
+          <video src="media/2026-10-22/finance-ember.mp4" autoplay muted loop playsinline controls aria-label="The ember glow following a pointer across the window"></video>
           <figcaption>The ember following the pointer: the glass lights where it is touched, and the particles lean after it. Ten seconds, looped.</figcaption>
         </figure>
         <figure class="log-media">
-          <img src="media/finance-ledger.png" alt="Sirene Finance ledger view: a table of transactions and a panel naming repeated merchants" loading="lazy">
+          <img src="media/2026-10-22/finance-ledger.png" alt="Sirene Finance ledger view: a table of transactions and a panel naming repeated merchants" loading="lazy">
           <figcaption>The ledger view: thirteen months of rows, filters, and a panel that names the merchants taking the money. Sample figures.</figcaption>
         </figure>
         <figure class="log-media">
-          <img src="media/finance-holdings.png" alt="Close crop of the summary rail: the goal bar, and crypto, silver and gold panels" loading="lazy">
+          <img src="media/2026-10-22/finance-holdings.png" alt="Close crop of the summary rail: the goal bar, and crypto, silver and gold panels" loading="lazy">
           <figcaption>Detail, at native size: the goal bar and the three holdings panels. Crypto is priced from a local spot file; the silver figure is the carried account, cross-checked against spot.</figcaption>
         </figure>
         <figure class="log-media">
-          <img src="media/finance-leaks.png" alt="Close crop of the leak panel: merchants with hit counts, averages, totals and DRIP flags" loading="lazy">
+          <img src="media/2026-10-22/finance-leaks.png" alt="Close crop of the leak panel: merchants with hit counts, averages, totals and DRIP flags" loading="lazy">
           <figcaption>Detail, at native size: where the money leaks. Bills and income are excluded; what remains is the discretionary repeat. Cheap ones are marked DRIP.</figcaption>
         </figure>
         <p>The Guild Master can also be told to change things now. Ask him to set a savings goal and the goal changes in the application, not just in the answer.</p>
