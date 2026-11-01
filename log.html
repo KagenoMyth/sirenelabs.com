@@ -29,6 +29,23 @@
   </svg>
   <p class="lede">Short, frequent notes on what we're building — the in-progress version. Longer writeups live on the <a href="blog.html">blog</a>.</p>
   <div class="log-list">
+    <article class="log-entry" id="log-2026-10-31-cardinal-world">
+      <time class="mono" datetime="2026-10-31">2026-10-31</time>
+      <div>
+        <span class="tag mono">cardinal</span>
+        <p>cardinal 0.7.18 — the world got an edge, then a light. The 400 m ground plane is gone: the town now stands on a floating island, a 90 m disc over a rock keel with a stone balustrade at the rim, and the sky is Bevy's atmosphere instead of a painted gradient. The sun follows a real arc again — its noon peak was capped at 18° for years so the disc would stay in frame, which meant late-afternoon light at every hour; at 51° midday actually lights the streets. A weather machine walks the sky from clear to clouds to rain, greying the dome and pulling the horizon in as it goes.</p>
+        <p>The colour pass that followed was mostly subtraction. Shade starts at black and the sun draws the town; the sky fill sits at 7%, so anything the sun misses stays dark. Walls are one baked plank texture under six wood tints over a black base course, the ground is dirt, the roads are pale stone, and a colour grade sits on the camera — contrast up, gamma and lift down — because a 1.5% black lift turned out to be the whole difference between deep shade and haze. Boards run horizontally on every face now: a cuboid's faces disagree about which way is up, so the wall mesh builds its own UVs.</p>
+        <figure class="log-media">
+          <img src="media/2026-10-31/cardinal-island-morning.jpg" alt="cardinal's floating island town at 09:30 — sunlit wood façades, a dirt street with pale stone road, deep black shade" loading="lazy">
+          <figcaption>09:30. Raking sun down the street: one side lit, one side in shadow, the sky fill barely there — which is the look the darkness-first pass was after.</figcaption>
+        </figure>
+        <figure class="log-media">
+          <img src="media/2026-10-31/cardinal-island-afternoon.jpg" alt="The same island town in mid-afternoon, sun from the west, long shadows across the road" loading="lazy">
+          <figcaption>Mid-afternoon, sun from the other side. Same town, same materials — the light does the rest.</figcaption>
+        </figure>
+        <p>What it is not yet: the buildings are still boxes. No windows, no props, no cobbles — the texture does what it can and no more. That is the materials pass, and it is next.</p>
+      </div>
+    </article>
     <article class="log-entry" id="log-2026-10-23-cardinal">
       <time class="mono" datetime="2026-10-23">2026-10-23</time>
       <div>

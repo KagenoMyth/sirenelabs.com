@@ -5,7 +5,14 @@
     <link>https://sirenelabs.com/</link>
     <description>Notes from the lab — build logs, experiments, and lessons learned.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Oct 2026 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 00:00:00 -0700</lastBuildDate>
+    <item>
+      <title>cardinal — 2026-10-31</title>
+      <link>https://sirenelabs.com/log.html#log-2026-10-31-cardinal-world</link>
+      <guid isPermaLink="true">https://sirenelabs.com/log.html#log-2026-10-31-cardinal-world</guid>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 -0700</pubDate>
+      <description>cardinal 0.7.18: the town stands on a floating island under Bevy's atmosphere instead of a 400 m ground plane and a painted sky. The sun's noon peak went from 18° (late-afternoon light at every hour) to 51°, a weather machine walks clear to clouds to rain, walls are a baked plank texture under six wood tints over a black base course, ground is dirt and roads pale stone, and a camera colour grade drops gamma and lift — shade starts at black and the sun draws the town.</description>
+    </item>
     <item>
       <title>cardinal — 2026-10-23</title>
       <link>https://sirenelabs.com/log.html#log-2026-10-23-cardinal</link>
